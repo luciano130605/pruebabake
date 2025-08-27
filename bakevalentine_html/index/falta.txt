@@ -1,0 +1,1 @@
+Falta suscribirse.js, back end, base de datos, api, etc

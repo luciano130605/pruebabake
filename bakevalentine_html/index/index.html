@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="globals.css" />
+    <script type="module" src="buscar.js"></script>
+    <link rel="stylesheet" href="inicio.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <img src="logo.png" class="Logo" alt="Logo">
+    <div class="rectangulo-logo"></div>
+
+    <div class="buscador-contenedor">
+        <input type="text" id="Buscador" placeholder="Buscar cookies, tortas,..">
+        <button id="btn-buscar">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <div class="large grid centered square-grid">
+        <h2 class="categorias">Categorías</h2>
+    </div>
+    <script type="module" src="animar-Categorias.js"></script>
+    <div class="carrusel">
+        <div class="carrusel-track">
+            <button class="categoria" onclick="location.href='../productos/budines/budines.html'"><img src="budines.png">Budines</button>
+            <button class="categoria" onclick="location.href='../productos/tortas/tortas.html'"><img src="tortas.png">Tortas</button>
+            <button class="categoria" onclick="location.href='../productos/muffins-y-cupcakes/muffins-y-cupcakes.html'"><img src="muffins-y-cupcakes.png">Muffins
+                <br>Cupcakes</button>
+            <button class="categoria" onclick="location.href='../productos/alfajores/alfajores.html'"><img
+                    src="alfajores.png">Alfajores</button>
+            <button class="categoria" onclick="location.href='../productos/pepas-y-scones/pepas-y-scones.html'"><img src="pepas.jpeg">Pepas
+                <br>Scones</button>
+            <button class="categoria" onclick="location.href='../productos/cookie/cookies.html'"><img src="cookie.png">Cookies</button>
+            <button class="categoria" onclick="location.href='../productos/postres/postres.html'"><img src="postres.png">Postres</button>
+            <button class="categoria" onclick="location.href='../productos/box/box.html'"><img src="box.png">Box</button>
+
+
+            <!-- se duplican para el loop infinito -->
+            <button class="categoria" onclick="location.href='../productos/budines/budines.html'"><img src="budines.png">Budines</button>
+            <button class="categoria" onclick="location.href='../productos/tortas/tortas.html'"><img src="tortas.png">Tortas</button>
+            <button class="categoria" onclick="location.href='../productos/muffins-y-cupcakes/muffins-y-cupcakes.html'"><img src="muffins-y-cupcakes.png">Muffins
+                <br>Cupcakes</button>
+            <button class="categoria" onclick="location.href='../productos/alfajores/alfajores.html'"><img
+                    src="alfajores.png">Alfajores</button>
+            <button class="categoria" onclick="location.href='../productos/pepas-y-scones/pepas-y-scones.html'"><img src="pepas.jpeg">Pepas
+                <br>Scones</button>
+            <button class="categoria" onclick="location.href='../productos/cookie/cookies.html'"><img src="cookie.png">Cookies</button>
+            <button class="categoria" onclick="location.href='../productos/postres/postres.html'"><img src="postres.png">Postres</button>
+            <button class="categoria" onclick="location.href='../productos/box/box.html'"><img src="box.png">Box</button>
+        </div>
+
+    </div>
+    <div class="suscripcion">
+        <!-- Texto animado -->
+        <div class="large centered row">
+            <p class="text-xl">
+                Recibí novedades de nuestros productos
+            </p>
+        </div>
+        <div class="small row"></div>
+
+
+
+        <!-- Formulario de suscripción -->
+        <input type="email" id="email" placeholder="Email">
+        <button id="btn-suscribir">Suscribirme</button>
+        <p id="mensaje"></p>
+        <scripttype="module" src="s.js"> </script>
+    </div>
+</body>
+
+<footer>
+    <button onclick="location.href='../footer/carrito.html'"><i class="fas fa-cart-shopping"></i></button>
+    <button onclick="location.href='../footer/favoritos.html'"><i class="fa-solid fa-heart"></i></button>
+    <button onclick="location.href='../index/index.html'"><i class="fa-solid fa-house"></i></button>
+    <button onclick="location.href='../footer/contacto.html'"><i class="fa-solid fa-envelope"></i></button>
+    <button onclick="location.href='../footer/usuario.html'"><i class="fa-solid fa-user"></i></button>
+</footer>
+
+</html>
